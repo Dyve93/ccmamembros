@@ -12,9 +12,9 @@ class CardGenerator:
         draw = ImageDraw.Draw(img)
         
         try:
-            font_large = ImageFont.truetype(self.font_path, 45)
-            font_medium = ImageFont.truetype(self.font_path, 35)
-            font_small = ImageFont.truetype(self.font_path, 30)
+            font_large = ImageFont.truetype(self.font_path, 24)
+            font_medium = ImageFont.truetype(self.font_path, 20)
+            font_small = ImageFont.truetype(self.font_path, 18)
         except:
             font_large = ImageFont.load_default()
             font_medium = ImageFont.load_default()
