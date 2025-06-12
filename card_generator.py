@@ -12,13 +12,13 @@ class CardGenerator:
         draw = ImageDraw.Draw(img)
         
         try:
-            font_large = ImageFont.truetype(self.font_path, 125)
-            font_medium = ImageFont.truetype(self.font_path, 110)
-            font_small = ImageFont.truetype(self.font_path, 100)
+            font_large = ImageFont.truetype(self.font_path, 75)
+            font_medium = ImageFont.truetype(self.font_path, 70)
+            font_small = ImageFont.truetype(self.font_path, 60)
         except:
-            font_large = ImageFont.load_default()
-            font_medium = ImageFont.load_default()
-            font_small = ImageFont.load_default()
+            font_large = ImageFont.load_default(size=75)
+            font_medium = ImageFont.load_default(size=70)
+            font_small = ImageFont.load_default(size=60)
         
         positions = {
             'name': (150, 160),
