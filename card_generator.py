@@ -12,21 +12,21 @@ class CardGenerator:
         draw = ImageDraw.Draw(img)
         
         try:
-            font_large = ImageFont.truetype(self.font_path, 40)
-            font_medium = ImageFont.truetype(self.font_path, 30)
-            font_small = ImageFont.truetype(self.font_path, 25)
+            font_large = ImageFont.truetype(self.font_path, 65)
+            font_medium = ImageFont.truetype(self.font_path, 55)
+            font_small = ImageFont.truetype(self.font_path, 45)
         except:
             font_large = ImageFont.load_default()
             font_medium = ImageFont.load_default()
             font_small = ImageFont.load_default()
         
         positions = {
-            'name': (150, 200),
-            'function': (150, 260),
-            'address': (150, 320),
-            'birth_date': (150, 380),
-            'status': (150, 440),
-            'issue_date': (150, 500)
+            'name': (150, 160),
+            'function': (150, 220),
+            'address': (150, 280),
+            'birth_date': (150, 340),
+            'status': (150, 400),
+            'issue_date': (150, 460)
         }
         
         draw.text(positions['name'], f"Nome: {member_data['name']}", fill="black", font=font_large)
